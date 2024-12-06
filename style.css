@@ -1,5 +1,36 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  background-color: aquamarine;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 10% 1fr;
+}
+
+nav {
+  height: 1fr;
+  grid-column: span 2;
+  background-color: whitesmoke;
+}
+
+aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  background-color: plum;
+  margin-left: 16;
+}
+
+main {
+  background-color: #807181;
+  color: whitesmoke;
+  flex-direction: column;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+}
+
+#section_1 {
 }
